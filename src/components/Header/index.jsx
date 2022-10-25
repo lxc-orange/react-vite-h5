@@ -10,7 +10,7 @@ const Header = memo(({title = ''}) => {
       <div className={style.block}>
         <NavBar
           className={style.header}
-          left={<Icon type='arrow-left' theme='primary' onClick={() => navigate('/')} />}
+          left={<Icon type='arrow-left' theme='primary' onClick={() => navigate(-1)} />}
           title={title}
         />
       </div>
